@@ -1,0 +1,246 @@
+/* 全站公共样式：统一背景、导航、卡片和基础排版。 */
+:root {
+  --bg: #0f1014;
+  --bg-soft: rgba(15, 16, 20, 0.72);
+  --panel: rgba(20, 22, 29, 0.78);
+  --panel-strong: rgba(14, 16, 22, 0.88);
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #f4f4f5;
+  --muted: rgba(244, 244, 245, 0.72);
+  --accent: #d95d39;
+  --accent-soft: #f0b36f;
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--text);
+  background:
+    linear-gradient(135deg, rgba(10, 11, 15, 0.9), rgba(20, 18, 16, 0.72)),
+    radial-gradient(circle at top, rgba(217, 24, 57, 0.18), transparent 38%),
+    url('../img/field.jpg') fixed no-repeat center center;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  transition: color .25s ease, opacity .25s ease, transform .25s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  background: rgba(8, 9, 12, 0.76);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.navbar-default .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-shell {
+  padding-top: 110px;
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(28, 31, 39, 0.82), rgba(17, 18, 24, 0.76));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+}
+
+.hero-copy {
+  margin: 12px auto 28px;
+  text-align: center;
+  max-width: 840px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 16px;
+  border: 1px solid rgba(240, 179, 111, 0.25);
+  border-radius: 999px;
+  background: rgba(240, 179, 111, 0.08);
+  color: rgba(255, 233, 204, 0.92);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-lead {
+  margin: 20px auto 16px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.meta-pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255,255,255,0.76);
+  font-size: 14px;
+}
+
+.section-card {
+  margin: 26px auto 0;
+  padding: 30px 34px;
+}
+
+.section-card h2,
+.section-card h1 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.muted-note {
+  color: rgba(255,255,255,0.65);
+}
+
+.secondary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  background: rgba(255,255,255,0.05);
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.secondary-link:hover,
+.secondary-link:focus {
+  color: #fff;
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.1);
+}
+
+.page-intro {
+  padding: 28px 30px;
+  margin: 110px auto 34px;
+}
+
+.page-intro p {
+  margin-bottom: 0;
+}
+
+.questionbox {
+  min-height: auto;
+}
+
+.flexWidth {
+  width: 100%;
+  max-width: 860px;
+}
+
+.question-frame {
+  padding: 26px 26px 16px;
+  margin-bottom: 22px;
+}
+
+.question-intro {
+  margin: 40px auto 22px;
+  padding: 24px 26px;
+}
+
+.question-intro h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.question-intro p {
+  margin: 0;
+}
+
+footer {
+  margin-top: 90px;
+}
+
+.flashes {
+  margin-top: 90px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .page-shell {
+    padding-top: 92px;
+  }
+
+  .hero-lead {
+    font-size: 17px;
+  }
+
+  .section-card,
+  .page-intro,
+  .question-intro {
+    padding: 22px 20px;
+  }
+}
+
+.question-form { margin-bottom: 18px; }
+.question-tag { margin-bottom: 12px; color: rgba(255,255,255,0.58); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+.flavor-note { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.08); }
+.flavor-note h3 { margin-top: 0; }

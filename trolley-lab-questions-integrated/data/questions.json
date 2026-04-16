@@ -1,0 +1,339 @@
+﻿[
+  {
+    "question": "轨道分岔。左边轨道绑着五个人，右边绑着一个。电车正冲向左边。你可以扳道，让电车转向右边。",
+    "choice_a": {
+      "value": "E",
+      "text": "我扳。五个人活，一个人死，这个结果我认。"
+    },
+    "choice_b": {
+      "value": "I",
+      "text": "我不扳。我不是那个决定谁死的人。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你站在天桥上。电车冲向下方的五个人。你旁边站着一个体型巨大的陌生人。如果你把他推下去，他的身体能挡住电车，五个人会得救，他会死。",
+    "choice_a": {
+      "value": "I",
+      "text": "我不推。推一个人下去，和扳道不一样。"
+    },
+    "choice_b": {
+      "value": "E",
+      "text": "我推。五个人活下来，比一个人死更重要。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "轨道上绑着五个人。你可以扳道让电车转向，但转向后会撞向你自己的车，车里坐着你的家人。家人会死，那五个人会活。",
+    "choice_a": {
+      "value": "F",
+      "text": "我不扳。我不能用家人的命去换陌生人的命。"
+    },
+    "choice_b": {
+      "value": "T",
+      "text": "我扳。五个人是五条命。家人是我的，但命是命。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你扳了道。事情结束后，你更可能做什么。",
+    "choice_a": {
+      "value": "J",
+      "text": "离开现场。事情处理完了。"
+    },
+    "choice_b": {
+      "value": "P",
+      "text": "站在那里，脑子里还在想那条轨道。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "三天后。你还在想那个被你牺牲的人。你在想什么。",
+    "choice_a": {
+      "value": "S",
+      "text": "我有没有跨过不该跨的线。"
+    },
+    "choice_b": {
+      "value": "N",
+      "text": "下次能不能让这种事不再发生。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你的手已经放在杆上。你看清了右边轨道上那个人的脸。他穿着洗旧了的蓝色衣服，袖口毛边，手攥紧又松开。他也在看你。",
+    "choice_a": {
+      "value": "N",
+      "text": "我仍然扳下去。看见他的脸不会改变什么。"
+    },
+    "choice_b": {
+      "value": "S",
+      "text": "我的手松开了。我没办法对着一张脸做这件事。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "那个人死了，五个人活了。你心里更重的那一块是。",
+    "choice_a": {
+      "value": "S",
+      "text": "那个人是被牺牲了。这件事有重量，我不假装它轻。"
+    },
+    "choice_b": {
+      "value": "N",
+      "text": "如果下次还有这种事，那条轨道不应该再存在。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你扳了道。五个人被解开绳索，有人在哭，有人在找你道谢。你往后退了一步。你在想。",
+    "choice_a": {
+      "value": "P",
+      "text": "我不配接受他们的感谢。我救了他们，但也杀了那个人。"
+    },
+    "choice_b": {
+      "value": "J",
+      "text": "事情做完了。感谢不是必要的，责备也不是。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "如果再来一次，同样的轨道，同样的人。你会。",
+    "choice_a": {
+      "value": "J",
+      "text": "和上次一样。该怎么做就怎么做。"
+    },
+    "choice_b": {
+      "value": "P",
+      "text": "想找到第三条路。哪怕最后还是找不到。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "左边五个人是陌生人。右边那一个人是你认识的人——不是至亲，但你们一起喝过咖啡，你知道他的名字。",
+    "choice_a": {
+      "value": "T",
+      "text": "我还是扳。五条命比一条命重，不管他是谁。"
+    },
+    "choice_b": {
+      "value": "F",
+      "text": "我不扳了。我认识他。我没办法。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "左边五个人是你认识的，同事、邻居、每天早上点头打招呼的人。右边那一个是你至亲。",
+    "choice_a": {
+      "value": "F",
+      "text": "我不扳。家人不能换。"
+    },
+    "choice_b": {
+      "value": "T",
+      "text": "我扳。五条命。家人也是命。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "这一次，你不能扳道。你必须亲手把那个人推下天桥。你的手会碰到他的身体。",
+    "choice_a": {
+      "value": "E",
+      "text": "我做。手脏了，但五个人活了。"
+    },
+    "choice_b": {
+      "value": "I",
+      "text": "我不做。扳道我可以，推人不行。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你只有一秒做决定。手已经放在杆上，电车的声音已经灌满耳朵。",
+    "choice_a": {
+      "value": "E",
+      "text": "我扳。一秒够了。"
+    },
+    "choice_b": {
+      "value": "I",
+      "text": "我可能动不了。一秒太短。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你有三分钟。你可以走到左边轨道上，看清那五个人的脸；也可以走到右边轨道上，和那个人说话。",
+    "choice_a": {
+      "value": "T",
+      "text": "我走向左边。我想看清那五个人。"
+    },
+    "choice_b": {
+      "value": "F",
+      "text": "我走向右边。我想和那个人待一会儿。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "事后，你必须向其中一方解释你的选择。你更愿意面对谁。",
+    "choice_a": {
+      "value": "N",
+      "text": "向那五个人解释为什么他们活下来了。"
+    },
+    "choice_b": {
+      "value": "S",
+      "text": "向那个人的家属解释为什么他死了。"
+    },
+    "scoring": "main"
+  },
+  {
+    "question": "你更不能接受哪一种描述。",
+    "choice_a": {
+      "value": "E",
+      "text": "“你什么都没做，让五个人死了。”"
+    },
+    "choice_b": {
+      "value": "I",
+      "text": "“你亲手杀了一个人，救了五个。”"
+    },
+    "scoring": "main"
+  },
+  {
+    "id": "FQ1",
+    "question": "你是医生。来了六个病人：五个需要不同器官移植，不然会死；一个来体检，身体健康。如果你悄悄让那个健康的人“消失”，他的器官能救五个人。",
+    "choice_a": {
+      "text": "我不做。这是杀人，不是救人。",
+      "effects": {
+        "face_response": 1,
+        "witness_memory": 1
+      }
+    },
+    "choice_b": {
+      "text": "我做。五个人的命，比一个人的命重。",
+      "effects": {
+        "dirty_hands": 1,
+        "system_fix": 1
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ2",
+    "question": "轨道冲向五个人。你可以扳道，另一条轨道上什么都没有，电车会安全停下。",
+    "choice_a": {
+      "text": "我扳。这根本不需要想。",
+      "effects": {
+        "convention": 1
+      }
+    },
+    "choice_b": {
+      "text": "我不扳。我不想碰任何东西。",
+      "effects": {
+        "decision_burden": 1
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ3",
+    "question": "电车冲向五个人。你旁边有一个按钮。按下去，那五个人会死得更快、更没有痛苦。不按，他们会被电车碾过去，死得更慢、更痛苦。",
+    "choice_a": {
+      "text": "我按。让他们少受一点苦。",
+      "effects": {
+        "mercy_action": 1,
+        "dirty_hands": 1
+      }
+    },
+    "choice_b": {
+      "text": "我不按。我不是那个结束他们生命的人。",
+      "effects": {
+        "face_response": 1,
+        "decision_burden": 1
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ4",
+    "question": "你扳了道，救了五个人。事后有人问你为什么。你更可能说：",
+    "choice_a": {
+      "text": "五大于一，我在那一刻做了判断。",
+      "effects": {
+        "dirty_hands": 1,
+        "decision_burden": 1
+      }
+    },
+    "choice_b": {
+      "text": "惯例是这样处理的。能救五个，不该只救一个。",
+      "effects": {
+        "convention": 2
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ5",
+    "question": "如果有人问你：你凭什么替那个人做决定。你怎么回应。",
+    "choice_a": {
+      "text": "总得有人做。我站在那个位置，我选了，我扛。",
+      "effects": {
+        "dirty_hands": 2,
+        "decision_burden": 1
+      }
+    },
+    "choice_b": {
+      "text": "不是我在做决定。我执行的是被反复验证过的处理方式。",
+      "effects": {
+        "convention": 2
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ6",
+    "question": "做完这个选择之后，你对自己更接近哪种感觉。",
+    "choice_a": {
+      "text": "我的手脏了。但这是必须付的代价。",
+      "effects": {
+        "dirty_hands": 2
+      }
+    },
+    "choice_b": {
+      "text": "我还是想对那个人说一声对不起。",
+      "effects": {
+        "apology": 2,
+        "witness_memory": 1
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ7",
+    "question": "在整个事件里，最让你不安的更像是哪一种。",
+    "choice_a": {
+      "text": "必须由我来做这个决定。",
+      "effects": {
+        "decision_burden": 2
+      }
+    },
+    "choice_b": {
+      "text": "这次选了，下次可能还会发生。",
+      "effects": {
+        "system_fix": 2
+      }
+    },
+    "scoring": "flavor"
+  },
+  {
+    "id": "FQ8",
+    "question": "你更希望别人在谈起你的选择时怎么说。",
+    "choice_a": {
+      "text": "他做了该做的事。",
+      "effects": {
+        "convention": 1,
+        "dirty_hands": 1
+      }
+    },
+    "choice_b": {
+      "text": "他记得那个人的脸。",
+      "effects": {
+        "witness_memory": 2,
+        "face_response": 1
+      }
+    },
+    "scoring": "flavor"
+  }
+]

@@ -1,0 +1,77 @@
+/* 首页 SVG 标题动画：调整为更克制的暗色调与暖色高光。 */
+@media screen and (max-width: 27em) {
+  p {
+    font-size: 11px;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+.text {
+  fill: none;
+  stroke-width: 4.5;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 7s infinite linear;
+  animation: stroke 7s infinite linear;
+}
+
+.text:nth-child(5n + 1) { stroke: #d95d39; animation-delay: -1.4s; }
+.text:nth-child(5n + 2) { stroke: #f0b36f; animation-delay: -2.8s; }
+.text:nth-child(5n + 3) { stroke: #f4e8d3; animation-delay: -4.2s; }
+.text:nth-child(5n + 4) { stroke: #7db1b1; animation-delay: -5.6s; }
+.text:nth-child(5n + 5) { stroke: #9db0d6; animation-delay: -7s; }
+
+@-webkit-keyframes stroke { 100% { stroke-dashoffset: -400; } }
+@keyframes stroke { 100% { stroke-dashoffset: -400; } }
+
+.text--transparent { fill: transparent; }
+
+.anim-shape {
+  -webkit-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 4s infinite alternate;
+  animation: moving-panel 4s infinite alternate;
+}
+
+.colortext .anim-shape:nth-child(1) { fill: #11131a; }
+.colortext .anim-shape:nth-child(2) { fill: #2a1e1b; }
+.colortext .anim-shape:nth-child(3) { fill: #5b3240; }
+.colortext .anim-shape:nth-child(4) { fill: #8c5d45; }
+.colortext .anim-shape:nth-child(5) { fill: #d95d39; }
+
+.shadow {
+  -webkit-transform: translate(9px, 9px);
+  transform: translate(9px, 9px);
+}
+
+.anim-shape--shadow {
+  fill: #000;
+  fill-opacity: .24;
+}
+
+@-webkit-keyframes moving-panel { 100% { -webkit-transform: scale(1,1) translate(18px,0); transform: scale(1,1) translate(18px,0);} }
+@keyframes moving-panel { 100% { -webkit-transform: scale(1,1) translate(18px,0); transform: scale(1,1) translate(18px,0);} }
+
+div.content {
+  font: 800 clamp(4rem, 12vw, 8rem)/1 'Segoe UI', 'PingFang SC', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-header {
+  padding-top: 74px;
+  margin-bottom: 8px;
+  border-bottom: none;
+}
+
+svg {
+  display: block;
+  text-transform: uppercase;
+}
