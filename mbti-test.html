@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="24 道道德两难题，完成作答后可查看对应的哲学画像与详细解析。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="电车难题,道德两难,伦理测试,哲学画像">
+    
+    <title>道德两难测试 · 24 题</title>
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/site.css" />
+    <link rel="stylesheet" href="./static/css/svgcheckbx.css">
+    <script type="text/javascript" src="./static/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="./static/js/vendor/bootstrap.min.js"></script>
+    <script src="./static/js/common/scoring.js"></script>
+    <script src="./static/js/pages/mbti-test.js"></script>
+    <script src="./static/js/common/project-info.js"></script>
+    <style>
+        body {
+            min-height: 100%;
+            overflow-x: hidden;
+        }
+
+        .questionbox {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-bottom: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 测试页只承载导航和题目容器，题目内容由 JS 动态生成。 -->
+    <div class="navbar navbar-default" style="margin-bottom: 10em;">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand">Trolley Lab</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main"
+                    aria-label="切换导航菜单">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./personality-types.html">十六种哲学画像</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="question-intro glass-panel">
+            <h1>道德两难测试</h1>
+            <p>共 24 题。前 16 题决定主画像，后 8 题用于补充你在这一画像中的具体风格。</p>
+        </div>
+        <div class="questionbox">
+            <!-- JS 会把 questions.json 渲染成一题一屏的单选表单。 -->
+            <div class="flexWidth" id="mbtiquestion">
+                <!-- topic -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

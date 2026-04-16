@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="电车难题主题的 24 题道德两难测试，完成作答后查看十六种哲学画像与详细解析。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="电车难题,道德两难,伦理学测试,哲学画像,思想实验">
+    <meta property="og:title" content="电车难题哲学画像测试 · 24 题">
+    <meta property="og:description" content="在线完成 24 题电车难题测试，并查看十六种哲学画像的完整解析。">
+    <meta property="og:type" content="website">
+    
+    
+    <title>电车难题哲学画像测试 · 24 题</title>
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/home-title.css">
+    <link rel="stylesheet" href="./static/css/start-button.css">
+    <link rel="stylesheet" href="./static/css/site.css">
+    <script src="./static/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="./static/js/vendor/bootstrap.min.js"></script>
+    <script src="./static/js/common/project-info.js"></script>
+</head>
+
+<body>
+    <!-- 首页只负责引导用户进入测试，并提供十六型人格入口。 -->
+    <div>
+        <!-- 顶部导航在所有主要页面保持一致，降低跳转成本。 -->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Trolley Lab</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main"
+                        aria-label="切换导航菜单">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="./personality-types.html">十六种哲学画像</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- 主视觉标题通过 SVG 文本描边动画突出测试主题。 -->
+            <div class="page-header">
+                <div class="content">
+                    <svg viewBox="0 0 1000 300" style="width: 100%;">
+                        <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="60%" dy=".2em">
+                                TROLLEY LAB
+                            </text>
+                        </symbol>
+                        <use xlink:href="#s-text" class="text"></use>
+                        <use xlink:href="#s-text" class="text"></use>
+                        <use xlink:href="#s-text" class="text"></use>
+                        <use xlink:href="#s-text" class="text"></use>
+                        <use xlink:href="#s-text" class="text"></use>
+                        <use xlink:href="#s-text" class="text"></use>
+                        <clippath id="cp-text">
+                            <text text-anchor="middle" x="50%" y="60%" dy=".2em" class="text--line">
+                                TROLLEY LAB
+                            </text>
+                        </clippath>
+                        <g clip-path="url(#cp-text)" class="shadow">
+                            <rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
+                        </g>
+                        <g clip-path="url(#cp-text)" class="colortext">
+                            <rect width="100%" height="100%" class="anim-shape"></rect>
+                            <rect width="80%" height="100%" class="anim-shape"></rect>
+                            <rect width="60%" height="100%" class="anim-shape"></rect>
+                            <rect width="40%" height="100%" class="anim-shape"></rect>
+                            <rect width="20%" height="100%" class="anim-shape"></rect>
+                        </g>
+                        <use xlink:href="#s-text" class="text--transparent"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="hero-copy">
+                <div class="hero-kicker">24 questions · 16 portraits · philosophy-driven dilemmas</div>
+                <p class="hero-lead">这不是一份普通的“人格测试”，而是一张关于你如何面对牺牲、责任、关系与规则的判断地图。</p>
+                <div class="hero-meta">
+                    <span class="meta-pill">24 道两难题</span>
+                    <span class="meta-pill">16 种哲学画像</span>
+                    <span class="meta-pill">标题 / 哲学家 / 长文解析</span>
+                </div>
+            </div>
+
+            <!-- 这里展示测试说明，帮助用户理解题目没有对错、结果仅供参考。 -->
+            <div class="bs-docs-section">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bs-component glass-panel section-card">
+                            <h2>测试前须知</h2>
+                            <p>1、题目没有标准答案，请按你的第一判断与真实直觉作答。</p>
+                            <p>2、这份测试展示的是你在道德两难中的判断倾向，而不是知识水平、智力或专业能力。</p>
+                            <p>
+                                3、本项目输出的是十六种哲学画像，而不是正式的学术分类。它的作用是帮助你理解自己在经典案例中的判断结构。
+                            </p>
+                            <p>4、共 24 题；建议独立完成，不要在作答过程中频繁切换立场。</p>
+                            <p>5、测试结果仅供讨论与参考。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 首页唯一的主操作按钮，直接进入答题页。 -->
+            <div style="text-align:center; margin-top: 18px; margin-bottom: 48px;">
+                <a href="./mbti-test.html" class="a-btn">
+                    <span></span>
+                    <span>开始测试</span>
+                    <span>进入 24 题</span>
+                </a>
+                <div>
+                    <a class="secondary-link" href="./personality-types.html">先看十六种画像</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

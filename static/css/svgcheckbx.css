@@ -1,0 +1,150 @@
+/* 答题页选项样式：隐藏原生单选框，强化题面卡片与选中反馈。 */
+*, *:after, *::before { box-sizing: border-box; }
+
+body {
+  user-select: none;
+}
+
+.ac-custom form,
+.ac-custom fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ac-custom fieldset {
+  padding: 30px 30px 18px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(24, 27, 35, 0.92), rgba(14, 16, 21, 0.96));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.24);
+}
+
+.ac-custom legend {
+  width: 100%;
+  margin-bottom: 18px;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.55;
+  border-bottom: none;
+}
+
+.ac-custom ul,
+.ac-custom ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ac-custom li {
+  position: relative;
+  margin: 16px 0;
+  padding: 0;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: background .28s ease, border-color .28s ease, transform .28s ease;
+}
+
+.ac-custom li:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(240, 179, 111, 0.22);
+}
+
+.ac-custom label {
+  display: block;
+  position: relative;
+  font-size: clamp(1rem, 1.7vw, 1.22rem);
+  padding: 26px 22px 26px 78px;
+  color: rgba(255,255,255,0.88);
+  cursor: pointer;
+  transition: color .28s ease;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 20px;
+  margin-top: -25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+  opacity: 0;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.ac-custom label::before {
+  content: '';
+  border: 2px solid rgba(255,255,255,0.24);
+  background: rgba(255,255,255,0.04);
+  transition: opacity .3s ease, border-color .3s ease, background .3s ease;
+}
+
+.ac-radio label::before { border-radius: 50%; }
+
+.ac-custom input[type="checkbox"]:checked + label,
+.ac-custom input[type="radio"]:checked + label {
+  color: #fff;
+}
+
+.ac-custom input[type="checkbox"]:checked + label::before,
+.ac-custom input[type="radio"]:checked + label::before {
+  background: rgba(217, 24, 57, 0.2);
+  border-color: rgba(240, 179, 111, 0.88);
+  opacity: 1;
+}
+
+.ac-custom svg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  left: 25px;
+  pointer-events: none;
+}
+
+.ac-custom svg path {
+  stroke: #f7d9ad;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  left: 23px;
+}
+
+.ac-circle svg {
+  width: 66px;
+  height: 66px;
+  margin-top: -33px;
+  left: 7px;
+}
+
+.ac-circle svg path { stroke-width: 4.5px; }
+
+@media screen and (max-width: 50em) {
+  .flexWidth { width: 100%; margin: 8px; }
+  .ac-custom fieldset { padding: 22px 18px 14px; border-radius: 22px; }
+  .ac-custom legend { font-size: 1.3rem; }
+  .ac-custom label { padding: 22px 18px 22px 72px; }
+}
